@@ -16,5 +16,7 @@ requirejs.config({
 	}
 });
 
-requirejs(["dependencies", "firebase"],
-	function (dependencies, firebase) {
+requirejs(["dependencies", "firebase", "draw-card", "shuffle-card"],
+	function (dependencies, firebase, drawCard, shuffle) {
+
+  });
