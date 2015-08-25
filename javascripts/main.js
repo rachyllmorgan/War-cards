@@ -1,22 +1,23 @@
 requirejs.config({
   baseUrl: './javascripts',
   paths: {
-    	'jquery': '../bower_components/jquery/dist/jquery.min',
-	'firebase': '../bower_components/firebase/firebase',
-	'lodash': '../bower_components/lodash/lodash',
-    	'hbs': '../bower_components/require-handlebars-plugin/hbs',
-    	'bootstrap': '../bower_components/bootstrap/dist/js/bootstrap.min',
-    	'q': '../bower_components/q/q'
+    'jquery': '../lib/bower_components/jquery/dist/jquery.min',
+    'hbs': '../lib/bower_components/require-handlebars-plugin/hbs',
+    'bootstrap': '../lib/bower_components/bootstrap/dist/js/bootstrap.min',
+    'firebase': '../lib/bower_components/firebase/firebase',
+    'lodash': '../lib/bower_components/lodash/lodash.min',
+    'q': '../lib/bower_components/q/q'
   },
   shim: {
     'bootstrap': ['jquery'],
-		'firebase': {
-			exports: 'Firebase'
-		}
+    'firebase': {
+      exports: 'Firebase'
 	}
+}
 });
 
-requirejs(["dependencies", "firebase", "draw-card", "shuffle-card"],
-	function (dependencies, firebase, drawCard, shuffle) {
+requirejs(["dependencies", "firebase", "start-game", "draw-card"],
+	function (dependencies, firebase, startGame, drawCard) {
+
 
   });

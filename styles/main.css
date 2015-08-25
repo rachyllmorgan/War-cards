@@ -1,3 +1,8 @@
+body {
+  background-color: green;
+  color: white; }
 
+.row {
+  display: inline; }
 
 /*# sourceMappingURL=main.css.map */
